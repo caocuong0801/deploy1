@@ -8,9 +8,6 @@ var files = []
 app.use(express.static('uploads'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-var cookieParser = require('cookie-parser')
-app.use(cookieParser)
-
 var multer = require('multer')
 var upload = multer({ dest: 'uploads/' })
 
